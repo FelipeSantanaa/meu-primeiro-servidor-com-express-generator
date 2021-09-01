@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= titulo %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <header>
-    <img src="/images/users.jpg" alt="Imagem de Capa" height="250px" width="250px">
-    <h1><%= titulo %></h1>
-    <p><%= subtitulo %></p>
-  </header>
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
   <section class="users">
     <h2> Usuários Registrados</h2>
       <% for(let usuario of usuarios) { %>
@@ -21,4 +12,5 @@
   <% } %> 
   </section>
   </body>
+<%- include('./partials/footer') %>
 </html>
